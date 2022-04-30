@@ -18,13 +18,13 @@ function getSeason(date) {
    }
 
   if (!date instanceof Date || !Object.prototype.toString.call(date) === "[object Date]") {
-console.log('111')
     throw new Error("Invalid date!");
   }
 
   let season = '';
   try {
     let month = date.getMonth();
+    const year = date.getYear();
     month++;
     switch (month) {
       case 12: 
@@ -54,8 +54,6 @@ console.log('111')
   return season;
 }
 
-// let res = getSeason(new Date());
-// console.log(res)
 module.exports = {
   getSeason
 };
