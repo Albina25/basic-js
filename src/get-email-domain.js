@@ -17,7 +17,6 @@ function getEmailDomain(email) {
   for (let i = l; i >= 0; i--) {
     if (email[i] === '@') {
       const index = i;
-      console.log("domain: ", index);
       emailDomain = email.slice(index+1);
       break;
     }
