@@ -43,7 +43,7 @@ function getDNSStats(domains) {
         } else {
           obj[key] = 1;
         }   
-        i++; 
+      i++; 
     }
   }
 return obj;
